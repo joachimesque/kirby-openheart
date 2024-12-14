@@ -1,0 +1,110 @@
+.emojo-listo {
+  --tr: 25ms ease-in-out;
+
+  list-style: '';
+  margin-inline: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.3em 0.6em;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  i { font-style: normal; }
+
+  button {
+    background: none;
+    cursor: pointer;
+    transition: border var(--tr), background var(--tr);
+    color: inherit;
+
+    &:is(:hover, :focus) {
+      border: 1px solid color-mix(in srgb, currentcolor, transparent 50%);
+      background: color-mix(in srgb, currentcolor, transparent 90%);
+    }
+  }
+
+  span.is_new {
+    border: 1px solid color-mix(in srgb, currentcolor, transparent 50%);
+    background: color-mix(in srgb, currentcolor, transparent 90%);
+  }
+
+  :where(button, span) {
+    background-color: transparent;
+    line-height: 1.2;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: inline-flex;
+    gap: 0.5em;
+    border-radius: 0.5em;
+    padding: 0.1em 0.4em;
+    border: 1px solid transparent;
+  }
+}
+
+.emojo-fieldo {
+  flex: 1 0 100%;
+  text-align: center;
+
+  @media screen and (min-width: 720px) {
+    position: relative;
+
+    :popover-open {
+      position: absolute;
+      inset: unset;
+      inset-inline: 50%;
+      transform: translateX(-50%);
+      margin-block-start: 2px;
+    }
+  }
+}
+
+.emojo-clicko {
+  border: 1px solid color-mix(in srgb, currentcolor, transparent 30%);
+  padding: 0.1em 0.4em 0.3em;
+
+  [hidden] {
+    display: none;
+  }
+}
+
+.emojo-selecto {
+  border-radius: 0.5rem;
+  padding: 0;
+  border: 0;
+
+  &:popover-open {
+    outline-offset: 2px;
+    outline: 1px solid color-mix(in srgb, currentcolor, transparent 50%);
+  }
+}
+
+emoji-picker {
+  --border-radius: 0.5rem;
+  --border-size: 0;
+
+  @media screen and (min-width: 720px) {
+    width: 100%;
+    height: 300px;
+  }
+
+  @media screen and (max-width: 555px) {
+    --num-columns: 6;
+    --category-emoji-size: .8rem;
+    --emoji-size: 1rem;
+
+    max-width: 100vw;
+  }
+}
+
+.all-emojos {
+  display: inline-flex;
+  justify-content: end;
+  flex-direction: row-reverse;
+  font-size: 0.8em;
+
+  span {
+    margin-right: -0.333em;
+    text-shadow: 2px 0 1px black;
+  }
+}

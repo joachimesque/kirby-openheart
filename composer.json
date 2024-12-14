@@ -1,0 +1,23 @@
+{
+	"name": "joachimesque/openheart",
+	"description": "Openheart.fiy for Kirby",
+	"type": "kirby-plugin",
+	"license": "MIT",
+	"version": "0.0.1alpha",
+	"authors": [
+		{
+			"name": "Joachim Robert",
+			"email": "joachim.robert@proton.me",
+			"homepage": "https://professeurjoachim.com"
+		}
+	],
+	"require": {
+		"getkirby/composer-installer": "^1.2",
+		"p3k/emoji-detector": "^1.2"
+	},
+	"config": {
+		"allow-plugins": {
+			"getkirby/composer-installer": true
+		}
+	}
+}
