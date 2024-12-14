@@ -15,7 +15,7 @@ The [emoji-picker-element](https://github.com/nolanlawson/emoji-picker-element#r
 
 ## Using
 
-Copy the `kirby-openheart` directory into your `site/plugins` directory.
+Download & extract the project and copy it into your `site/plugins` directory.
 
 ### options
 
@@ -56,7 +56,7 @@ sections:
 Add a call for the scripts in your template:
 
 
-```php-template
+```html+php
 <?php /* layout.php */ ?>
 …
 <html>
@@ -71,7 +71,7 @@ Add a call for the scripts in your template:
 Add the openheart snippet in your content page:
 
 
-```php-template
+```html+php
 <?php /* article.php */ ?>
 <main>
   <h1><?= $page->title() ?></h1>
@@ -83,7 +83,7 @@ Add the openheart snippet in your content page:
 You can also include a list of all openheart emojis to be displayed in your pages list:
 
 
-```php-template
+```html+php
 <?php /* articles_list.php */ ?>
 <?php foreach($page->children() as $child): ?>
   <article>
