@@ -21,7 +21,10 @@ Copy the `kirby-openheart` directory into your `site/plugins` directory.
 
 You can specify which emoji reactions you won’t allow.
 
-```config.php
+
+```php
+// config.php
+…
   'joachimesque.openheart.disallow' => ['🖕','🖕🏻','🖕🏼','🖕🏽','🖕🏾','🖕🏿'],
 ```
 
@@ -29,7 +32,8 @@ You can specify which emoji reactions you won’t allow.
 
 Add the Openheart tab for site-wide emoji leaderboards
 
-```site.yml
+```yml
+# site.yml
 tabs:
   site:
     …
@@ -38,7 +42,8 @@ tabs:
 
 Add the Openheart field for a page-specific list of Openheart emoji
 
-```default.yml
+```yml
+# default.yml
 sections:
   fields:
     type: fields
@@ -50,7 +55,9 @@ sections:
 
 Add a call for the scripts in your template:
 
-```layout.php
+
+```php-template
+<?php /* layout.php */ ?>
 …
 <html>
   <head>
@@ -63,7 +70,9 @@ Add a call for the scripts in your template:
 
 Add the openheart snippet in your content page:
 
-```article.php
+
+```php-template
+<?php /* article.php */ ?>
 <main>
   <h1><?= $page->title() ?></h1>
   …
@@ -73,7 +82,9 @@ Add the openheart snippet in your content page:
 
 You can also include a list of all openheart emojis to be displayed in your pages list:
 
-```articles_list.php
+
+```php-template
+<?php /* articles_list.php */ ?>
 <?php foreach($page->children() as $child): ?>
   <article>
     <h2><?= $child->title() ?></h2>
