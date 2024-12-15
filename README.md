@@ -17,6 +17,12 @@ The [emoji-picker-element](https://github.com/nolanlawson/emoji-picker-element#r
 
 Download & extract the project and copy it into your `site/plugins` directory.
 
+Install the `p3k/emoji-detector` PHP dependency with Composer. The command should look like:
+
+```
+composer require p3k/emoji-detector
+```
+
 ### options
 
 You can specify which emoji reactions you won’t allow.
