@@ -38,7 +38,7 @@ You can specify which emoji reactions you won’t allow.
 
 ### blueprints
 
-Add the Openheart tab for site-wide emoji leaderboards
+**Add the Openheart tab for site-wide emoji leaderboards**
 
 ```yml
 # site.yml
@@ -53,12 +53,7 @@ tabs:
   <img width="1123" alt="image" src="https://github.com/user-attachments/assets/0b5f4b03-10cf-4a1f-942e-4d0b3cfc8b92" />
 </details>
 
-Add the Openheart field for a page-specific list of Openheart emoji
-
-<details>
-  <summary>Screenshot</summary>
-  <img width="750" alt="image" src="https://github.com/user-attachments/assets/db2b7840-7f9d-4f98-b31d-ed164bc5855b" />
-</details>
+**Add the Openheart field for a page-specific list of Openheart emoji**
 
 ```yml
 # default.yml
@@ -68,6 +63,11 @@ sections:
     fields:
       openheart: fields/openheart
 ```
+
+<details>
+  <summary>Screenshot</summary>
+  <img width="750" alt="image" src="https://github.com/user-attachments/assets/db2b7840-7f9d-4f98-b31d-ed164bc5855b" />
+</details>
 
 ### templates
 
