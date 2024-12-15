@@ -2,6 +2,8 @@
 
 A very basic implementation of the [Openheart protocol](https://openheart.fyi/) for [Kirby](https://getkirby.com).
 
+You can check out a demo article on my blog: [A small Openheart implementation for Kirby — Le carnet de Joachim](https://blog.professeurjoachim.com/billet/2024-12-15-a-small-openheart-implementation-for-kirby)
+
 ## State of the plugin
 
 This plugin was developed for my own personal use. It works on my website, so my goal is fullfilled.
@@ -46,7 +48,17 @@ tabs:
   openhearts: tabs/openheart
 ```
 
+<details>
+  <summary>Screenshot</summary>
+  <img width="1123" alt="image" src="https://github.com/user-attachments/assets/0b5f4b03-10cf-4a1f-942e-4d0b3cfc8b92" />
+</details>
+
 Add the Openheart field for a page-specific list of Openheart emoji
+
+<details>
+  <summary>Screenshot</summary>
+  <img width="750" alt="image" src="https://github.com/user-attachments/assets/db2b7840-7f9d-4f98-b31d-ed164bc5855b" />
+</details>
 
 ```yml
 # default.yml
